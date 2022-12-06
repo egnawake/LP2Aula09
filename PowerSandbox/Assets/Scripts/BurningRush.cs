@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class BurningRush : Superpower
 {
-    [SerializeField] private float boostFactor;
+    [SerializeField] private float boostPercent;
 
     public override void Activate()
     {
         LightMyFire();
-        BoostSpeed(boostFactor);
+        BoostSpeed(boostPercent);
     }
 }
